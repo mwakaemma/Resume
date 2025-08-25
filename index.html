@@ -14,25 +14,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: "class", // enable class-based dark mode
+        darkMode: "class",
       };
     </script>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-    <!-- Or PNG format -->
-    <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
 
     <!-- html2pdf.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans"
   >
     <div class="max-w-6xl mx-auto p-6" id="resume">
       <!-- Header -->
-      <header class="text-center border-b pb-6">
+      <header
+        class="text-center border-b pb-6"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
         <h1 class="text-3xl font-bold text-indigo-800">Mwaka Emmanuel</h1>
         <p class="mt-2 text-sm">
           📍 Uganda | ✉️ mwakaemmanuel2016@email.com | ☎️ +256 770 935 713 | 🌐
@@ -41,8 +49,10 @@
             class="text-indigo-800 font-bold"
             >LinkedIn</a
           >
-          | <a href="https://github.com/mwakaemma/mwakaemma" class="font-bold">GitHub</a> |
-          <a href="" class="font-bold">Portfolio</a>
+          | <a href="https://github.com/mwakaemma/mwakaemma" class="font-bold"
+            >GitHub</a
+          >
+          | <a href="" class="font-bold">Portfolio</a>
         </p>
       </header>
 
@@ -50,7 +60,7 @@
         <!-- LEFT COLUMN -->
         <aside class="md:col-span-1 space-y-6">
           <!-- Education -->
-          <section>
+          <section data-aos="fade-right" data-aos-duration="800">
             <h2
               class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
             >
@@ -66,7 +76,7 @@
           </section>
 
           <!-- Skills -->
-          <section>
+          <section data-aos="fade-right" data-aos-duration="900">
             <h2
               class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
             >
@@ -81,8 +91,8 @@
             </ul>
           </section>
 
-           <!-- Professionalism -->
-          <section>
+          <!-- Professionalism -->
+          <section data-aos="fade-right" data-aos-duration="1000">
             <h2
               class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
             >
@@ -98,7 +108,7 @@
           </section>
 
           <!-- Languages -->
-          <section>
+          <section data-aos="fade-right" data-aos-duration="1100">
             <h2
               class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
             >
@@ -111,7 +121,7 @@
           </section>
 
           <!-- Interests -->
-          <section>
+          <section data-aos="fade-right" data-aos-duration="1200">
             <h2
               class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
             >
@@ -130,7 +140,7 @@
         <!-- RIGHT COLUMN -->
         <main class="md:col-span-2 space-y-6">
           <!-- Summary -->
-          <section>
+          <section data-aos="fade-left" data-aos-duration="800">
             <h2
               class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
             >
@@ -149,7 +159,7 @@
           </section>
 
           <!-- Experience -->
-          <section>
+          <section data-aos="fade-left" data-aos-duration="900">
             <h2
               class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
             >
@@ -206,7 +216,7 @@
           </section>
 
           <!-- Projects -->
-          <section>
+          <section data-aos="fade-left" data-aos-duration="1000">
             <h2
               class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
             >
@@ -227,57 +237,71 @@
           </section>
 
           <!-- Achievements -->
-          <section>
-            <h2
-              class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
-            >
-              Achievements & Leadership
-            </h2>
-            <ul class="list-disc list-inside text-sm mt-2">
-              <li>Scholarship Awardee at IGNOU Under E-Vidya
-              Bharti Project for African Students</li>
-              <li>Founder of Matechs Web Solutions</li>
-              <li>Active Participant in Aspire Leaders Program (ALP)</li>
-            </ul>
-          </section>
-        </main>
-      </div>
-    </div>
+          <section data-aos="fade-left" data
+<!-- Achievements -->
+<section data-aos="fade-left" data-aos-duration="1100">
+  <h2 class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase">
+    Achievements & Leadership
+  </h2>
+  <ul class="list-disc list-inside text-sm mt-2">
+    <li data-aos="fade-up" data-aos-duration="1200">
+      Scholarship Awardee at IGNOU Under E-Vidya Bharti Project for African Students
+    </li>
+    <li data-aos="fade-up" data-aos-duration="1300">
+      Founder of Matechs Web Solutions
+    </li>
+    <li data-aos="fade-up" data-aos-duration="1400">
+      Active Participant in Aspire Leaders Program (ALP)
+    </li>
+  </ul>
+</section>
+</main>
+</div>
 
-    <!-- Controls -->
-    <div class="text-center mt-6 flex justify-center gap-4">
-      <button
-        onclick="toggleDarkMode()"
-        class="px-6 mb-10 py-2 bg-gray-700 dark:bg-gray-200 text-white dark:text-black rounded-lg shadow hover:opacity-80 transition"
-      >
-        🌙 Change Theme
-      </button>
-      <button
-        onclick="downloadPDF()"
-        class="px-6 mb-10 py-2 bg-indigo-800 text-white rounded-lg shadow hover:bg-indigo-800 transition"
-      >
-        📄 Download Resume
-      </button>
-    </div>
+<!-- Controls -->
+<div class="text-center mt-6 flex justify-center gap-4">
+  <button
+    onclick="toggleDarkMode()"
+    class="px-6 mb-10 py-2 bg-gray-700 dark:bg-gray-200 text-white dark:text-black rounded-lg shadow hover:opacity-80 transition"
+  >
+    🌙 Change Theme
+  </button>
+  <button
+    onclick="downloadPDF()"
+    class="px-6 mb-10 py-2 bg-indigo-800 text-white rounded-lg shadow hover:bg-indigo-800 transition"
+  >
+    📄 Download Resume
+  </button>
+</div>
 
-    <script>
-      // Dark mode toggle
-      function toggleDarkMode() {
-        document.documentElement.classList.toggle("dark");
-      }
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Initialize AOS
+  AOS.init({
+    once: true, // Animate only once
+    duration: 800,
+    easing: "ease-out-cubic",
+  });
 
-      // PDF download
-      function downloadPDF() {
-        const element = document.getElementById("resume");
-        const opt = {
-          margin: 0.5,
-          filename: "Mwaka_Emmanuel_Resume.pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-        };
-        html2pdf().from(element).set(opt).save();
-      }
-    </script>
-  </body>
+  // Dark mode toggle
+  function toggleDarkMode() {
+    document.documentElement.classList.toggle("dark");
+  }
+
+  // PDF download
+  function downloadPDF() {
+    const element = document.getElementById("resume");
+    const opt = {
+      margin: 0.5,
+      filename: "Mwaka_Emmanuel_Resume.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+    };
+    html2pdf().from(element).set(opt).save();
+  }
+</script>
+</body>
 </html>
+>>>>>>> bdc6ea4 (Added AOS scroll animations to resume)
