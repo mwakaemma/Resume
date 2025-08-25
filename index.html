@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mwaka Emmanuel – MERN Stack Developer & Web Designer. Professional resume and portfolio."
+    />
+    <meta name="author" content="Mwaka Emmanuel" />
+    <title>Mwaka Emmanuel - Resume</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class", // enable class-based dark mode
+      };
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <!-- Or PNG format -->
+    <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans"
+  >
+    <div class="max-w-6xl mx-auto p-6" id="resume">
+      <!-- Header -->
+      <header class="text-center border-b pb-6">
+        <h1 class="text-3xl font-bold text-indigo-800">Mwaka Emmanuel</h1>
+        <p class="mt-2 text-sm">
+          📍 Uganda | ✉️ mwakaemmanuel2016@email.com | ☎️ +256 770 935 713 | 🌐
+          <a
+            href="www.linkedin.com/in/mwaka-emmanuel-679312251"
+            class="text-indigo-800 font-bold"
+            >LinkedIn</a
+          >
+          | <a href="https://github.com/mwakaemma/mwakaemma" class="font-bold">GitHub</a> |
+          <a href="" class="font-bold">Portfolio</a>
+        </p>
+      </header>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <!-- LEFT COLUMN -->
+        <aside class="md:col-span-1 space-y-6">
+          <!-- Education -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
+            >
+              Education
+            </h2>
+            <p class="text-sm mt-2">
+              <b><a href="https://www.ignou.ac.in/">IGNOU</b> – BCA (2022–2025)<br />Scholarship Under E-Vidya
+              Bharti Project</a>
+            </p>
+            <p class="text-sm mt-2">
+              <b><a href="https://www.katikamusdass.ac.ug/academics/online-application/">Katikamu SDA Secondary School</b><br />UCE & UACE (2013–2018)</a>
+            </p>
+          </section>
+
+          <!-- Skills -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
+            >
+              Skills
+            </h2>
+            <ul class="text-sm mt-2 list-disc list-inside space-y-1">
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>React.js, Node.js, Express.js, MongoDB</li>
+              <li>Tailwind CSS, Bootstrap</li>
+              <li>MySQL, SQL, WordPress</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </section>
+
+           <!-- Professionalism -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
+            >
+              Professional
+            </h2>
+            <ul class="text-sm mt-2 list-disc list-inside space-y-1">
+              <li>Problem-Solving</li>
+              <li>Critical Thinking</li>
+              <li>Team Collaboration</li>
+              <li>Communication & Presentation Skills</li>
+              <li>Creativity & Innovation</li>
+            </ul>
+          </section>
+
+          <!-- Languages -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
+            >
+              Languages
+            </h2>
+            <ul class="text-sm mt-2 list-disc list-inside space-y-1">
+              <li>Acholi (Fluent)</li>
+              <li>English (Fluent)</li>
+            </ul>
+          </section>
+
+          <!-- Interests -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-teal-700 dark:text-teal-400 uppercase"
+            >
+              Interests
+            </h2>
+            <ul class="text-sm mt-2 list-disc list-inside space-y-1">
+              <li>Web Development</li>
+              <li>Graphics Design</li>
+              <li>Leadership Development</li>
+              <li>Community Empowerment</li>
+              <li>Sustainable Innovation</li>
+            </ul>
+          </section>
+        </aside>
+
+        <!-- RIGHT COLUMN -->
+        <main class="md:col-span-2 space-y-6">
+          <!-- Summary -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
+            >
+              Professional Summary
+            </h2>
+            <p class="text-sm mt-2 capitalize">
+              Passionate MERN Stack Developer and Web Designer with hands-on
+              experience building impactful, user-centered web solutions.
+              Skilled in front-end and back-end technologies, UI/UX design, and
+              digital strategy. Currently pursuing a Bachelor of Computer
+              Applications (BCA) at IGNOU under the under E-Vidya Bharti
+              Scholarship Project for African Students. Committed to leveraging
+              technology for community empowerment and sustainable business
+              growth.
+            </p>
+          </section>
+
+          <!-- Experience -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
+            >
+              Professional Experience
+            </h2>
+            <div class="mt-2 space-y-4 text-sm">
+              <div>
+                <b>Front-End Developer</b> –
+                <a href="https://michelitconsults.com/" class="text-indigo-700"
+                  >Mike Mikel IT Consultant</a
+                >
+                <ul class="list-disc list-inside capitalize">
+                  <li>
+                    Designed and developed responsive, interactive applications.
+                  </li>
+                  <li>Enhanced UI/UX with modern frameworks.</li>
+                  <li>
+                    Collaborated with teams to deliver client-focused projects.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <b>WordPress Developer</b> –
+                <a href="https://act-uganda.org/" class="text-indigo-700"
+                  >Alliance for Community Transformation (ACT-Uganda)</a
+                >
+
+                <ul class="list-disc list-inside capitalize">
+                  <li>
+                    Built and maintained organizational websites for visibility
+                    and outreach.
+                  </li>
+                  <li>
+                    Implemented SEO strategies that boosted traffic and
+                    engagement.
+                  </li>
+                  <li>
+                    Trained staff on content updates and basic site management.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <b>Website Developer</b> – <a href="https://m.facebook.com/profile.php?id=104649345385021" class="text-indigo-700">Billington Hospital & Consultancy</a>
+                <ul class="list-disc list-inside capitalize">
+                  <li>
+                    Developed and deployed a hospital website to improve digital
+                    presence.
+                  </li>
+                  <li>Integrated forms and secure patient data features.</li>
+                  <li>Delivered a user-friendly health service platform.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
+            >
+              Projects
+            </h2>
+            <div class="mt-2 text-sm capitalize">
+              <p>
+                <b>Online Assignment Submission System (OASS):</b> MERN stack
+                app featuring role-based dashboards, assignment submission, and
+                grading tools.
+              </p>
+              <p class="mt-2 capitalize">
+                <b>Matechs Web Solutions (Founder):</b> A digital solutions
+                company offering web development, UI/UX, SEO, and scalable
+                business solutions under the slogan “Empowering Digital Dreams.”
+              </p>
+            </div>
+          </section>
+
+          <!-- Achievements -->
+          <section>
+            <h2
+              class="text-lg font-semibold text-indigo-800 dark:text-indigo-400 uppercase"
+            >
+              Achievements & Leadership
+            </h2>
+            <ul class="list-disc list-inside text-sm mt-2">
+              <li>Scholarship Awardee at IGNOU Under E-Vidya
+              Bharti Project for African Students</li>
+              <li>Founder of Matechs Web Solutions</li>
+              <li>Active Participant in Aspire Leaders Program (ALP)</li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="text-center mt-6 flex justify-center gap-4">
+      <button
+        onclick="toggleDarkMode()"
+        class="px-6 mb-10 py-2 bg-gray-700 dark:bg-gray-200 text-white dark:text-black rounded-lg shadow hover:opacity-80 transition"
+      >
+        🌙 Change Theme
+      </button>
+      <button
+        onclick="downloadPDF()"
+        class="px-6 mb-10 py-2 bg-indigo-800 text-white rounded-lg shadow hover:bg-indigo-800 transition"
+      >
+        📄 Download Resume
+      </button>
+    </div>
+
+    <script>
+      // Dark mode toggle
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
+
+      // PDF download
+      function downloadPDF() {
+        const element = document.getElementById("resume");
+        const opt = {
+          margin: 0.5,
+          filename: "Mwaka_Emmanuel_Resume.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        };
+        html2pdf().from(element).set(opt).save();
+      }
+    </script>
+  </body>
+</html>
